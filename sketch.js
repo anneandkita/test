@@ -15,8 +15,8 @@ function generateGarden(){
   title = input.value();
   print(title);
   //url = "http://bechdeltest.com/api/v1/getMoviesByTitle?title=" + title
-  url = "http://bechdeltest.com/api/v1/getMovieByImdbId?imdbid=0367631" 
-  loadJSON(url, yayData);
+  url = "https://bechdeltest.com/api/v1/getMovieByImdbId?origin=*&imdbid=0367631&callback=yayData" 
+  loadJSON(url, yayData, 'jsonp');
   print('hi');
 }
 
